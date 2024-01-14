@@ -1,8 +1,31 @@
-# Articubot Customized Fork
+# Articubot_one
 
-This repository is a fork of Josh Newans' Articubot, with customizations to enhance compactness and includes a personalized URDF file. The modifications are designed to offer improved performance and aesthetics based on individual preferences.
+This repository is a fork of Josh Newans Articubot_one, with customizations to make the design more compact and easy to print, It can be 3d printed as a single piece and requires minimal screws. It is based on a rasberry pi 4,rasberry pi cam, arduino nano, n20 encoder motors, L298N and a 3d printed power bank with a buck converter to power the motors.
 The following is the 3D model for this particular design:
 https://www.thingiverse.com/thing:6423686
+This is the playlist: https://www.youtube.com/playlist?list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT
+Josh Newans github: https://github.com/joshnewans
+
+
+## Installing ROS
+Follow the instructions to install ROS foxy on both the dev machine and the robot:
+https://docs.ros.org/en/foxy/Installation.html
+
+## Making the workspace
+Do the following on both your dev machine and your robot(rasberry pi):
+```bash
+mkdir robot_ws
+cd robot_ws
+mkdir src
+cd src
+'''
+git clone the package here
+```bash
+git clone https://github.com/FaizanTabassum/articubot_one.git
+cd ..
+colcon build
+'''
+
 
 ## Dependencies
 
@@ -16,6 +39,7 @@ Before proceeding, ensure that you have the following dependencies installed:
   ```
 
 - **Raspberry Pi Support for lidar:**
+- install this on the rasberry pi
   ```bash
   sudo apt install ros-foxy-rplidar-ros
   ```
@@ -98,11 +122,11 @@ ros2 launch articubot_one joystick.launch.py
 
 ### Rviz2
 
-To open Rviz2 with a specific configuration, run on the dev machine:
+To open Rviz2 with config file , run on the dev machine:
 ```bash
 rviz2 -d src/articubot_one/config/main.rviz
 ```
 
-## Custom URDF
+## The URDF file
 
 This program's URDF file is eddited according to my design, It is designed to be compact and easy to print and assemble, the whole print is just one piece and has place holders for all the components.
