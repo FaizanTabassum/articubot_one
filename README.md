@@ -3,7 +3,9 @@
 This repository is a fork of Josh Newans Articubot_one, with customizations to make the design more compact and easy to print, It can be 3d printed as a single piece and requires minimal screws. It is based on a rasberry pi 4,rasberry pi cam, arduino nano, n20 encoder motors, L298N and a 3d printed power bank with a buck converter to power the motors.
 The following is the 3D model for this particular design:
 https://www.thingiverse.com/thing:6423686
+
 This is the playlist: https://www.youtube.com/playlist?list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT
+
 Josh Newans github: https://github.com/joshnewans
 
 
@@ -19,7 +21,7 @@ mkdir robot_ws
 cd robot_ws
 mkdir src
 cd src
-'''
+```
 
 git clone the package here
 
@@ -27,7 +29,7 @@ git clone the package here
 git clone https://github.com/FaizanTabassum/articubot_one.git
 cd ..
 colcon build
-'''
+```
 
 
 ## Dependencies
