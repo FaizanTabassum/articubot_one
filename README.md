@@ -13,13 +13,16 @@ https://docs.ros.org/en/foxy/Installation.html
 
 ## Making the workspace
 Do the following on both your dev machine and your robot(rasberry pi):
+
 ```bash
 mkdir robot_ws
 cd robot_ws
 mkdir src
 cd src
 '''
+
 git clone the package here
+
 ```bash
 git clone https://github.com/FaizanTabassum/articubot_one.git
 cd ..
