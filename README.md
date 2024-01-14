@@ -8,6 +8,10 @@ This is the playlist: https://www.youtube.com/playlist?list=PLunhqkrRNRhYAffV8JD
 
 Josh Newans github: https://github.com/joshnewans
 
+You may need to change the counts per revolution of the motors in the description files because each motor is different, to do that use the following tutorial: 
+
+https://www.youtube.com/watch?v=-PCuDnpgiew&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT&index=7
+
 
 ## Installing ROS
 Follow the instructions to install ROS foxy on both the dev machine and the robot:
@@ -30,7 +34,8 @@ git clone https://github.com/FaizanTabassum/articubot_one.git
 cd ..
 colcon build
 ```
-
+## Arduino firmware for motor control
+https://github.com/joshnewans/ros_arduino_bridge
 
 ## Dependencies
 
