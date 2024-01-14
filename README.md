@@ -9,8 +9,9 @@ This is the playlist: https://www.youtube.com/playlist?list=PLunhqkrRNRhYAffV8JD
 Josh Newans github: https://github.com/joshnewans
 
 You may need to change the counts per revolution of the motors in the description files because each motor is different, to do that use the following tutorial: 
-
 https://www.youtube.com/watch?v=-PCuDnpgiew&list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT&index=7
+
+![](mybot.jpeg)
 
 
 ## Installing ROS
