@@ -78,7 +78,7 @@ Before proceeding, ensure that you have the following dependencies installed:
   sudo apt install ros-foxy-rqt-image-view
   ```
 
-- **Development Machine Dependency:**
+- **clone this in the src file to test the serial port with the arduino:**
   ```bash
   git clone https://github.com/joshnewans/serial_motor_demo.git
   ```
@@ -106,14 +106,14 @@ ros2 launch articubot_one camera.launch.py
 
 ### Mapping
 
-To perform mapping, use the following command on the dev machine:
+To perform mapping, use the following command and also open Rviz and add the map tile and ented /map as a topic:
 ```bash
 ros2 launch slam_toolbox online_async_launch.py params_file:=./src/articubot_one/config/mapper_params_online_async.yaml use_sim_time:=false
 ```
 
 ### Navigation
 
-For navigation, execute the following command on the dev machine:
+For navigation, open rviz2 add a map tile and select /global_costmap as a topic and use the 2d pose goal to make the robot go wherever:
 ```bash
 ros2 launch nav2_bringup navigation_launch.py use_sim_time:=false
 ```
